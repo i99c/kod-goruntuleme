@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kod Tasarımı Görüntüleyici</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Kod Tasarımı Görüntüleyici</h1>
-            </header>
-            <div class="tabs">
-                <button class="tablink"
-                    onclick="openTab(event, 'design')">Tasarım</button>
-                <button class="tablink"
-                    onclick="openTab(event, 'htmlCode')">HTML Kod</button>
-                <button class="tablink" onclick="openTab(event, 'cssCode')">CSS
-                    Kod</button>
-            </div>
-            <div id="design" class="tabcontent">
-                <h2>Tasarım Önizlemesi</h2>
-                <div class="design-preview">
-                    <!-- Tasarımınız burada görüntülenecek -->
-                    <div class="sample-design">
-                        <h3>Örnek Başlık</h3>
-                        <p>Bu, örnek bir tasarım paragrafıdır. Profesyonel
-                            görünümlü bir sayfa tasarımı.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="htmlCode" class="tabcontent">
-                <h2>HTML Kod</h2>
-                <pre><code class="language-html">
-                    <div class="card">
-                        <h2>CARD</h2>
-                    </div>
-            </code></pre>
-            </div>
-            <div id="cssCode" class="tabcontent">
-                <h2>CSS Kod</h2>
-                <pre><code class="language-css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kod Tasarımı Görüntüleyici</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Kod Tasarımı Görüntüleyici</h1>
+      </header>
+      <div class="tabs">
+        <button class="tablink"
+          onclick="openTab(event, 'design')">Tasarım</button>
+        <button class="tablink"
+          onclick="openTab(event, 'htmlCode')">HTML Kod</button>
+        <button class="tablink" onclick="openTab(event, 'cssCode')">CSS
+          Kod</button>
+      </div>
+      <div id="design" class="tabcontent">
+        <h2>Tasarım Önizlemesi</h2>
+        <div class="design-preview">
+          <!-- Tasarımınız burada görüntülenecek -->
+          <div class="card">
+            <h3>Card Yapısı</h3>
+            <p>Bu, örnek bir tasarım paragrafıdır. Profesyonel görünümlü bir
+              sayfa tasarımı.</p>
+          </div>
+        </div>
+
+      </div>
+      <div id="htmlCode" class="tabcontent">
+        <h2>HTML Kod</h2>
+        <pre><code class="language-html">
+                  &lt;div class="card"&gt;
+                      &lt;h2&gt;CARD&lt;/h2&gt;
+                  &lt;/div&gt;
+                              </code></pre>
+      </div>
+      <div id="cssCode" class="tabcontent">
+        <h2>CSS Kod</h2>
+        <pre><code class="language-css">
                     .card {
                         width: 190px;
                         height: 254px;
@@ -94,8 +96,8 @@
                       
                       
             </code></pre>
-            </div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
